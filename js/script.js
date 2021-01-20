@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', function () {
           stratPosition = window.pageYOffset,
           differPositions = tragetPosition - stratPosition,
           windowHeight = document.documentElement.clientHeight,
-          distance = differPositions > windowHeight ? differPositions : tragetPosition,
+          distance = differPositions > windowHeight + stratPosition ? differPositions : tragetPosition,
           startTime = null;
       requestAnimationFrame(animation);
 
